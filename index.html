@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM</title>
+    <link rel="icon" href="eme.jpg">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head> 
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-c"></i>
+                    <div class="logo-text">cm.dcn.pglmtn</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="#">PROJECT</a></li>
+                        <li><a href="">RESUME</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="eme.jpg"alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Cs Student</span></h5>
+                    <h1>Cathy Mae Decina</h1>
+                    <p>
+                        I am pursing computer science at st clare college of caloocan.
+                        <br>
+                        I am currently learning a Reactjs and other language. I want to be a software engineer and pro gamer
+                    </p>
+                    <div class="btn-group">
+                        <a href="resume.docx" class="btn active">Download Cv</a>
+                       
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/cmdcn"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@cm.dcn"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/cm.cantsleep/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open")
+        })
+
+        var typed = new Typed(".input", {
+    strings: ["Comscie Student", "3rd year student"],
+    typeSpeed: 40,
+    backSpeed: 40,
+    loop: true
+});
+
+        </script>
+</body>
+</html>
